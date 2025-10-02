@@ -1,0 +1,144 @@
+﻿namespace Try_catch_finally
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            #region Esercizio 1: Gestione dell'Input dell'Utente
+
+            #region Consegna
+            /*
+            Scrivi un programma che chiede all'utente la sua età. Usa un blocco try-catch per intercettare la FormatException che si verifica se l'utente inserisce un testo invece di un numero. In caso di errore, stampa un messaggio amichevole.            */
+            #endregion
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+
+            #region Esercizio 2: Divisione Sicura
+
+            #region Consegna
+            /*
+            Scrivi un programma che chiede all'utente due numeri interi (un numeratore e un denominatore) e ne calcola la divisione. Prevedi il caso in cui il denominatore sia zero, gestendo l'eccezione DivideByZeroException.            */
+            #endregion
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+
+            #region Esercizio 3: Accesso a un Array
+
+            #region Consegna
+            /*
+            Crea un array di 5 stringhe. Chiedi all'utente di inserire un indice e prova a stampare l'elemento dell'array a quell'indice. Gestisci l'errore che si verifica se l'utente inserisce un indice non valido.
+            */
+            #endregion
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+
+            #region Esercizio 4: Pulizia del Codice con finally
+
+            #region Consegna
+            /*
+            Simula l'apertura di una risorsa (es. una connessione a un database). Stampa "Connessione aperta." nel blocco try. Stampa "Elaborazione dati..." sempre nel try. In caso di errore (simulalo con un throw), stampa un messaggio nel catch. Indipendentemente dal risultato, stampa "Connessione chiusa." nel blocco finally.         
+            */
+            #endregion
+
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+
+            #region Esercizio 5: Stampa di una Lista (foreach loop)
+
+            #region Consegna
+            /*
+            Scrivi un programma che tenta di leggere il contenuto di un file di testo chiamato "documento.txt". Se il file non esiste, il programma dovrebbe intercettare l'eccezione FileNotFoundException e stampare un messaggio appropriato.
+            */
+            #endregion
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+
+            #region Esercizio 6: Creare un'Eccezione Personalizzata
+            #region Consegna
+            /*
+            1. Crea una classe `EtaNegativaException` che eredita da `Exception`.
+            2. Scrivi un metodo `ImpostaEta(int eta)` che lancia questa eccezione se l'età inserita è negativa.
+            3. Nel `Main`, chiama questo metodo e gestisci l'eccezione personalizzata.            
+            */
+
+            #endregion
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+
+            #region Esercizio 7: Gestione Generica degli Errori
+
+            #region Consegna
+            /*
+            Modifica l'Esercizio 2 (Divisione Sicura) in modo che abbia un solo blocco catch (Exception ex). Stampa il tipo di eccezione e il messaggio per capire quale errore si è verificato (FormatException o DivideByZeroException).
+            */
+            #endregion
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+
+            #region Esercizio 8: Conversione di Tipi di Dato
+
+            #region Consegna
+            /*
+            1. Crea una variabile `object` e assegnale una stringa (es. `"ciao"`).
+            2. In un blocco `try`, prova a fare un cast esplicito di questo oggetto a `int`.
+            3. Nel blocco `catch`, intercetta l'`InvalidCastException` e stampa un messaggio di errore.            
+            */
+            #endregion
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+
+            #region Esercizio 9: try-finally senza catch
+
+            #region Consegna
+            /*
+            Scrivi un metodo che simula l'allocazione di una risorsa. Usa un blocco try-finally per garantire che la risorsa venga sempre "rilasciata", anche se un errore si verifica nel try. Lascia che l'eccezione si propaghi al metodo chiamante (il Main), che la gestirà.            
+            */
+            #endregion
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+
+            #region Esercizio 10: Filtri di Eccezione (clausola when)
+
+            #region Consegna
+            /*
+            Scrivi un programma che lancia un'eccezione `HttpRequestException` (simulata). Usa due blocchi `catch`:
+
+            1. Il primo cattura l'eccezione solo `when` il suo messaggio contiene la parola "Timeout".
+            2. Il secondo cattura tutte le altre `HttpRequestException`.         
+            */
+            #endregion
+            #region Soluzione
+
+            #endregion
+
+            #endregion
+        }
+    }
+}

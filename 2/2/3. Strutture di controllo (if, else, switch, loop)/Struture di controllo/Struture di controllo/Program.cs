@@ -88,7 +88,11 @@
             */
             #endregion
             #region Soluzione
-
+                        var lista = new List <string>() {"mela","pera","banana","kiwi","pesca"};
+            foreach (var item in lista)
+            {
+                Console.WriteLine(item);
+            }
             #endregion
 
             #endregion
@@ -101,7 +105,26 @@
 
             #endregion
             #region Soluzione
-
+                        Random rnd = new Random();
+            int casuale = rnd.Next(1,101);
+            do
+            {
+                Console.WriteLine("Indovina il numero casuale:");
+                int numeroInserito= Convert.ToInt32(Console.ReadLine());
+                if (numeroInserito < casuale)
+                {
+                    Console.WriteLine("Numero troppo basso");
+                }
+                else if (numeroInserito > casuale)
+                {
+                    Console.WriteLine("Numero troppo alto");
+                }
+                else if (numeroInserito == casuale)
+                {
+                    Console.WriteLine("Numero esatto!");
+                }
+            }
+            while (true);
             #endregion
 
             #endregion
@@ -164,4 +187,5 @@
         }
     }
 }
+
 

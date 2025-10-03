@@ -39,8 +39,14 @@
             #endregion
             #region Output
             /*
-            Inserisci un numero intero: 7
-            Il numero 7 è dispari.
+            Console.WriteLine("Inserisci un numero iniziale: ");
+            int moltiplicando = Convert.ToInt32(Console.ReadLine());
+            int moltiplicatore = 10;
+            for (int i = 0; i <= moltiplicatore; i++)
+            {
+                int prodotto =  moltiplicando* i;
+                Console.WriteLine(prodotto);
+            }
             */
 
             #endregion
@@ -59,7 +65,17 @@
             #endregion
 
             #region Soluzione
+                        Console.WriteLine("Questa è la somma di tutti i numeri pari da 1 a 100");
+            int somma = 0;
+            for (int i = 0; i <= 100; i++)
+            {
+                if (i%2==0)
+                {
+                        somma = somma + i; 
+                }
 
+            }
+                    Console.WriteLine(somma);
             #endregion
 
             #endregion
@@ -148,3 +164,4 @@
         }
     }
 }
+

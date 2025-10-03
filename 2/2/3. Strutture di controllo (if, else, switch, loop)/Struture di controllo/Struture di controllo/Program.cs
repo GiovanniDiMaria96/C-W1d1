@@ -168,7 +168,7 @@
             int numeroInseritoUno = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i <= numeroInseritoUno; i++)
             {
-                for (int j = 0; j <= i; j++) // Stampa i+1 asterischi
+                for (int j = 0; j <= i; j++)
             {
                 Console.Write("*");
             }
@@ -210,6 +210,7 @@
         }
     }
 }
+
 
 
 

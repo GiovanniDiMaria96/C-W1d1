@@ -122,6 +122,7 @@
                 else if (numeroInserito == casuale)
                 {
                     Console.WriteLine("Numero esatto!");
+                    break;
                 }
             }
             while (true);
@@ -137,7 +138,20 @@
             */
             #endregion
             #region Soluzione
+                        int menuController = 0;
+            do
+            {
+                Console.WriteLine("1.Stampa saluto");
+                Console.WriteLine("2.Stampa data");
+                Console.WriteLine("0. Esci");
+                menuController = Convert.ToInt32(Console.ReadLine());
+                if (menuController == 0)
+                {
+                    break;  
+                }
 
+            }
+            while (true);
             #endregion
 
             #endregion
@@ -187,5 +201,6 @@
         }
     }
 }
+
 
 

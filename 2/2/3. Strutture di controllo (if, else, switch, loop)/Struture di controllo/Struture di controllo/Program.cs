@@ -65,7 +65,7 @@
             #endregion
 
             #region Soluzione
-                        Console.WriteLine("Questa è la somma di tutti i numeri pari da 1 a 100");
+            Console.WriteLine("Questa è la somma di tutti i numeri pari da 1 a 100");
             int somma = 0;
             for (int i = 0; i <= 100; i++)
             {
@@ -88,7 +88,7 @@
             */
             #endregion
             #region Soluzione
-                        var lista = new List <string>() {"mela","pera","banana","kiwi","pesca"};
+            var lista = new List <string>() {"mela","pera","banana","kiwi","pesca"};
             foreach (var item in lista)
             {
                 Console.WriteLine(item);
@@ -105,7 +105,7 @@
 
             #endregion
             #region Soluzione
-                        Random rnd = new Random();
+            Random rnd = new Random();
             int casuale = rnd.Next(1,101);
             do
             {
@@ -138,7 +138,7 @@
             */
             #endregion
             #region Soluzione
-                        int menuController = 0;
+            int menuController = 0;
             do
             {
                 Console.WriteLine("1.Stampa saluto");
@@ -164,7 +164,16 @@
             */
             #endregion
             #region Soluzione
-
+            Console.WriteLine("Inserisci un numero per comporre il tuo triangolo: ");
+            int numeroInseritoUno = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i <= numeroInseritoUno; i++)
+            {
+                for (int j = 0; j <= i; j++) // Stampa i+1 asterischi
+            {
+                Console.Write("*");
+            }
+                Console.WriteLine();
+            }
             #endregion
 
             #endregion
@@ -201,6 +210,7 @@
         }
     }
 }
+
 
 
 

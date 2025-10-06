@@ -26,7 +26,8 @@ namespace Try_catch_finally
 // public string Altezza { get; set; }
 // public float Altezza { get; set; }
 //ecc..
-//costruttore (metodo che non da ritorno, non obbligatorio)
+
+//COSTRUTTORE (metodo che non da ritorno, non obbligatorio)
 //costruttore default
 // public Rettangolo () { }
 //overloading del costruttore (inserendo proprietà non di default)
@@ -34,7 +35,8 @@ namespace Try_catch_finally
 // {
 //      this.Altezza = h;
 // }
-// metodi
+
+// METODI
 //AccessModifier (SEGUITO DA) TipoDaRestituire (SEGUITO DA) NomeMetodo([eventuali parametri])
 //{
 //
@@ -43,3 +45,4 @@ namespace Try_catch_finally
 // public void Benvenuto(){              ***(VOID NON RESTITUISCE NULLA, MA ESEGUE LE ISTRUZIONI DEL METODO)***
 //  Console.WriteLine("Benvenuto!")
 // }
+

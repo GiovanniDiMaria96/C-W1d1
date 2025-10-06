@@ -30,10 +30,11 @@ namespace Try_catch_finally
 // public string Altezza { get; set; }
 // public float Altezza { get; set; }
 //ecc..
+// per quelle private: camelcase e underscore. esempio: private string _nomeVariabile { get; set; } (ACCESSIBILE SOLO ALL'INTERNO DELLA CLASSE)
 
 //COSTRUTTORE (metodo che non da ritorno, non obbligatorio)
 //costruttore default
-// public Rettangolo () { }
+// public Rettangolo () { }               //PascalCase es. TriangoloIsoscele() { }
 //overloading del costruttore (inserendo proprietà non di default)
 // public Rettangolo (double h, double b)
 // {
@@ -48,6 +49,7 @@ namespace Try_catch_finally
 //es
 // public void Benvenuto(){              ***(VOID NON RESTITUISCE NULLA, MA ESEGUE LE ISTRUZIONI DEL METODO)***
 //  Console.WriteLine("Benvenuto!")
-// }
+// }     
+
 
 

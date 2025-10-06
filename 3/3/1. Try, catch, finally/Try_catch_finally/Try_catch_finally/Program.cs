@@ -212,27 +212,38 @@ namespace Try_catch_finally
 
             //ESERCIZIO 2
 
-            //ESERCIZIO 3
-            Lampadina lampadina = new Lampadina();
-            Console.WriteLine("1.Accendi la lampadina");
-            Console.WriteLine("2.Spegni la lampadina");
-            Console.WriteLine("3.Controlla se la lampadina è accesa o spenta");
-            int menu = Convert.ToInt32(Console.ReadLine());
+           //ESERCIZIO 3
+                Lampadina lampadina = new Lampadina(); //L'ISTANZA FUORI DAL CICLO EVITA DI CREARE UNA NUOVA LAMPADINA OGNI VOLTA
+            do
+            {
+                Console.WriteLine("1.Accendi la lampadina");
+                Console.WriteLine("2.Spegni la lampadina");
+                Console.WriteLine("3.Controlla se la lampadina è accesa o spenta");
+                Console.WriteLine("0.Esci");
+                int menu = Convert.ToInt32(Console.ReadLine());
 
-            if (menu == 3)
-            {
-                lampadina.StampaStato();
+                if (menu == 3)
+                {
+                    lampadina.StampaStato();
+                }
+                else if (menu == 2)
+                {
+                    lampadina.Spegni();
+                }
+                else if (menu == 1)
+                {
+                    lampadina.Accendi();
+                }
+                else
+                {
+                    break;
+                }
             }
-            else if (menu == 2)
-            {
-                lampadina.Spegni();
-            }
-            else if (menu == 1) { 
-                lampadina.Accendi();
-            }
+            while (true);
         }
     }
 }
+
 
 
 

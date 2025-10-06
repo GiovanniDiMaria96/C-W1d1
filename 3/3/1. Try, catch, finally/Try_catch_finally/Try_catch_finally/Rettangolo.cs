@@ -14,6 +14,10 @@ namespace Try_catch_finally
         {
             return Base * Altezza / 2;
         }
+         public int Perimetro () {
+
+     return Base * Altezza;
+ }
     }
 }
 
@@ -45,4 +49,5 @@ namespace Try_catch_finally
 // public void Benvenuto(){              ***(VOID NON RESTITUISCE NULLA, MA ESEGUE LE ISTRUZIONI DEL METODO)***
 //  Console.WriteLine("Benvenuto!")
 // }
+
 

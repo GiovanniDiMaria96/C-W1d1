@@ -1,4 +1,4 @@
-﻿namespace Try_catch_finally
+namespace Try_catch_finally
 {
     internal class Program
     {
@@ -8,9 +8,21 @@
 
             #region Consegna
             /*
-            Scrivi un programma che chiede all'utente la sua età. Usa un blocco try-catch per intercettare la FormatException che si verifica se l'utente inserisce un testo invece di un numero. In caso di errore, stampa un messaggio amichevole.            */
+            Scrivi un programma che chiede all'utente la sua età. 
+            Usa un blocco try-catch per intercettare la FormatException che si verifica se l'utente 
+            inserisce un testo invece di un numero. In caso di errore, stampa un messaggio amichevole.            */
             #endregion
             #region Soluzione
+            try
+            {
+                Console.WriteLine("Inserisci la tua età: ");
+                int eta = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (System.FormatException)
+            {
+                Console.WriteLine("Inserisci un numero non una lettera:");
+            }
+
 
             #endregion
 
@@ -20,9 +32,29 @@
 
             #region Consegna
             /*
-            Scrivi un programma che chiede all'utente due numeri interi (un numeratore e un denominatore) e ne calcola la divisione. Prevedi il caso in cui il denominatore sia zero, gestendo l'eccezione DivideByZeroException.            */
+            Scrivi un programma che chiede all'utente due numeri interi (un numeratore e un denominatore) 
+            e ne calcola la divisione. Prevedi il caso in cui il denominatore sia zero, 
+            gestendo l'eccezione DivideByZeroException.            */
             #endregion
             #region Soluzione
+            try
+            {
+                Console.WriteLine("Inserisci il numeratore: ");
+                int numeratore = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Inserisci il denominatore: ");
+                int denominatore = Convert.ToInt32(Console.ReadLine());
+
+                int risultato = numeratore / denominatore;
+                Console.WriteLine("Il risultato della divisione è: " + risultato);
+            }
+
+            catch (System.DivideByZeroException)
+            {
+                Console.WriteLine("Impossibile dividere per '0' ");
+            }
+
+
+
 
             #endregion
 
@@ -32,15 +64,28 @@
 
             #region Consegna
             /*
-            Crea un array di 5 stringhe. Chiedi all'utente di inserire un indice e prova a stampare l'elemento dell'array a quell'indice. Gestisci l'errore che si verifica se l'utente inserisce un indice non valido.
+            Crea un array di 5 stringhe. Chiedi all'utente di inserire un indice e prova a stampare 
+            l'elemento dell'array a quell'indice. Gestisci l'errore che si verifica se l'utente 
+            inserisce un indice non valido.
             */
             #endregion
             #region Soluzione
+            string[] cars = { "Volvo", "BMW", "Ford", "Mazda", "Opel" };
+            Console.WriteLine("Inserisci un indice: ");
+            int indice = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                Console.WriteLine(cars[indice]);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Inserisci un indice valido (da '1' a '5')");
+            }
 
             #endregion
 
             #endregion
-
+                
             #region Esercizio 4: Pulizia del Codice con finally
 
             #region Consegna
@@ -142,3 +187,4 @@
         }
     }
 }
+

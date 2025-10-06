@@ -204,10 +204,14 @@ namespace Try_catch_finally
             rettangolo.Altezza = altezza;
             rettangolo.Base = ba;
             rettangolo.Area();
+            Console.WriteLine("Area: ");
             Console.WriteLine(rettangolo.Area());
+            Console.WriteLine("Perimetro: ");
+            Console.WriteLine(rettangolo.Perimetro());
         }
     }
 }
+
 
 
 

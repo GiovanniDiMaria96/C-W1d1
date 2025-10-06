@@ -192,8 +192,22 @@ namespace Try_catch_finally
             #endregion
 
             #endregion
+
+
+
+                            // INTRODUZIONE PROGRAMMAZIONE AD OGGETTI
+            Rettangolo rettangolo = new Rettangolo();
+            Console.WriteLine("inserisci base:");
+            int ba = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Inserisci altezza: ");
+            int altezza = Convert.ToInt32(Console.ReadLine());
+            rettangolo.Altezza = altezza;
+            rettangolo.Base = ba;
+            rettangolo.Area();
+            Console.WriteLine(rettangolo.Area());
         }
     }
 }
+
 
 

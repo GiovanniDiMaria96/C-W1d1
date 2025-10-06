@@ -108,7 +108,15 @@ namespace Try_catch_finally
             */
             #endregion
             #region Soluzione
-
+            try
+            {
+                File.ReadAllText("C:\\Users\\Laboratorio19\\Desktop\\C #\\Teoria\\documento.txt");
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                Console.WriteLine("C:\\Users\\Laboratorio19\\Desktop\\C #\\Teoria\\documento.txt");
+                Console.WriteLine("File non trovato");
+            }
             #endregion
 
             #endregion
@@ -187,4 +195,5 @@ namespace Try_catch_finally
         }
     }
 }
+
 

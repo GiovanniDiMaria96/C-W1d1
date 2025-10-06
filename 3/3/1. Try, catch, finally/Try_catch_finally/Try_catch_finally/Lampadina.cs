@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,43 +11,41 @@ namespace Try_catch_finally
     {
         private bool _eAccesa;
 
-        public new bool Accendi()
+        public bool Accendi()
         {
-            if (_eAccesa == false)
+            if (!_eAccesa)
             {
                 _eAccesa = true;
                 Console.WriteLine("Hai acceso la lampadina");
             }
-
             return _eAccesa;
+
         }
 
-        public new bool Spegni()
+        public bool Spegni()
         {
-            if (_eAccesa == true)
+            if (_eAccesa)
             {
-            _eAccesa = false;
+                _eAccesa = false;
                 Console.WriteLine("Hai spento la lampadina");
-                
-            }
 
+            }
             return _eAccesa;
+
         }
 
-        public new bool StampaStato()
+        public void StampaStato()
         {
-            if (_eAccesa == false) {
-            Console.WriteLine("La lampadina è spenta ");
-            return _eAccesa;
-            }
-            else {
+            if (_eAccesa)
+            {
                 Console.WriteLine("La lampadina è accesa");
-                return _eAccesa; 
             }
+            else
+            {
+                Console.WriteLine("La lampadina è spenta ");
+            }
+            
         }
-
-
-
     }
 }
 

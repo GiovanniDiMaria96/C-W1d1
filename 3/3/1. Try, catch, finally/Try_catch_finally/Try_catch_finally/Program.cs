@@ -196,6 +196,7 @@ namespace Try_catch_finally
 
 
                             // INTRODUZIONE PROGRAMMAZIONE AD OGGETTI
+            //ESERCIZIO 1
             Rettangolo rettangolo = new Rettangolo();
             Console.WriteLine("inserisci base:");
             int ba = Convert.ToInt32(Console.ReadLine());
@@ -208,9 +209,31 @@ namespace Try_catch_finally
             Console.WriteLine(rettangolo.Area());
             Console.WriteLine("Perimetro: ");
             Console.WriteLine(rettangolo.Perimetro());
+
+            //ESERCIZIO 2
+
+            //ESERCIZIO 3
+            Lampadina lampadina = new Lampadina();
+            Console.WriteLine("1.Accendi la lampadina");
+            Console.WriteLine("2.Spegni la lampadina");
+            Console.WriteLine("3.Controlla se la lampadina è accesa o spenta");
+            int menu = Convert.ToInt32(Console.ReadLine());
+
+            if (menu == 3)
+            {
+                lampadina.StampaStato();
+            }
+            else if (menu == 2)
+            {
+                lampadina.Spegni();
+            }
+            else if (menu == 1) { 
+                lampadina.Accendi();
+            }
         }
     }
 }
+
 
 
 

@@ -272,15 +272,26 @@ namespace Try_catch_finally
             }
             while (true);
 
+                        //ESERCIZIO 1 (INCAPSULAMENTO)
             //var termometro = new Termometro(double.Parse(Console.ReadLine()));
             var termometro = new Termometro(20);
 
                 Console.WriteLine("Premi una lettera per uscire");
                 Console.WriteLine("Temperatura in celsius: " + termometro.Celsius);
                 Console.WriteLine("Temperatura in fahrenheit: " + termometro.Fahrenheit);
+
+
+                        // ESERCIZIO 2 (INCAPSULAMENTO)
+
+            var prodotto = new Prodotto("magazzino", 100);
+
+                Console.WriteLine("La quantità in magazzino è: " + prodotto.QuantitaDisponibile);
+                Console.WriteLine("Inserisci quantità in magazzino");
+                int menuUno = Convert.ToInt32(Console.ReadLine());  
         }
     }
 }
+
 
 
 

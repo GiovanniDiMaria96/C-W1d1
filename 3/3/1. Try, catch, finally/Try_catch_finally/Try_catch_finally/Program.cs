@@ -287,10 +287,11 @@ namespace Try_catch_finally
 
                 Console.WriteLine("La quantità in magazzino è: " + prodotto.QuantitaDisponibile);
                 Console.WriteLine("Inserisci quantità in magazzino");
-                int menuUno = Convert.ToInt32(Console.ReadLine());  
+                int menuDue = Convert.ToInt32(Console.ReadLine());  
         }
     }
 }
+
 
 
 

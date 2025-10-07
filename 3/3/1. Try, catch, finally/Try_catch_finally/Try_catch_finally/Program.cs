@@ -212,6 +212,37 @@ namespace Try_catch_finally
 
             //ESERCIZIO 2
 
+            //1.Crea una classe ContoBancario con una proprietà privata per il saldo(_saldo) 
+            //e una pubblica di sola lettura(Saldo) per esporlo.
+            //2.Nel costruttore, inizializza il saldo a un valore di partenza(es. 1000).
+            //3.Crea un metodo Deposita(decimal importo) che aggiunge un importo al saldo, ma solo se l'importo è positivo.
+            //4.Crea un metodo Preleva(decimal importo) che sottrae l'importo dal saldo, ma solo se l'importo è positivo
+            //E se il saldo è sufficiente.
+            //5.Nel Main, crea un ContoBancario, esegui alcune operazioni di deposito e prelievo(valide e non valide) 
+            //e stampa il saldo dopo ogni operazione.
+
+            ContoBancario contoBancario = new ContoBancario();
+            do { 
+            Console.WriteLine(contoBancario.Saldo());
+            Console.WriteLine("1.Aggiungi al saldo");
+            Console.WriteLine("2.Preleva dal saldo");
+            Console.WriteLine("0.Esci");
+            int menuUno = Convert.ToInt32(Console.ReadLine());
+
+            if (menuUno == 1)
+            {
+                contoBancario.Deposita();
+            }
+            else if (menuUno == 2)
+            {
+                contoBancario.Preleva();
+            } else
+            {
+                break;
+            }
+        }
+            while (true);
+
            //ESERCIZIO 3
                 Lampadina lampadina = new Lampadina(); //L'ISTANZA FUORI DAL CICLO EVITA DI CREARE UNA NUOVA LAMPADINA OGNI VOLTA
             do
@@ -250,6 +281,7 @@ namespace Try_catch_finally
         }
     }
 }
+
 
 
 

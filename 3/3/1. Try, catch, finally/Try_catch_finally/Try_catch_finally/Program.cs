@@ -240,9 +240,17 @@ namespace Try_catch_finally
                 }
             }
             while (true);
+
+            //var termometro = new Termometro(double.Parse(Console.ReadLine()));
+            var termometro = new Termometro(20);
+
+                Console.WriteLine("Premi una lettera per uscire");
+                Console.WriteLine("Temperatura in celsius: " + termometro.Celsius);
+                Console.WriteLine("Temperatura in fahrenheit: " + termometro.Fahrenheit);
         }
     }
 }
+
 
 
 

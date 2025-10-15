@@ -9,6 +9,7 @@
             regali.Add("regalo2");
             regali.Add("regalo3");
             regali.Add("regalo4");
+            //regali.Remove("regalo1") //RIMUOVE
 
             foreach (var item in regali)
             {
@@ -17,3 +18,4 @@
         }
     }
 }
+
